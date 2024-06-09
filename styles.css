@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+}
+header {
+  position: fixed;
+  width: 100%;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.nav-list li:last-child {
+  margin-right: 0;
+}
+
+.nav-list li a {
+  text-decoration: none;
+}
+
+.block1-top-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(178deg, #ffffff, #e3e3e3);
+}
+
+.block1-top-block img {
+  width: 50%;
+  height: 602px;
+}
+
+.block1-top-block div {
+  width: 50%;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.block1-top-block button {
+  padding: 12px;
+  background-color: #f6c402;
+  border-radius: 32px;
+  border: none;
+}
+
+.block1-top-block h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: "Sitka", sans-serif;
+  font-weight: 400;
+}
+
+.block2-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(1deg, #ffffff, #e3e3e3);
+}
+
+.block2-advantages {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block2-advantages img {
+  width: 48px;
+}
+
+.block2-advantages > div {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
