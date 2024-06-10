@@ -61,12 +61,14 @@ header {
 
 .block1-top-block h4 {
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h1 {
-  font-family: "Sitka", sans-serif;
-  font-weight: 400;
+  font-family: "Cactus Classical Serif", serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .block2-wrapper {
