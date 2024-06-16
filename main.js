@@ -1,5 +1,5 @@
-document.querySelector('#app').innerHTML = `
+document.querySelector("#app").innerHTML = `
   <div>
   HI
   </div>
-`
+`;

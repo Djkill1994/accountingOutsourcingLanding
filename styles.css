@@ -4,7 +4,15 @@ body {
 }
 header {
   position: fixed;
-  width: calc(100% - 124px);
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  margin: 0 -62px;
+}
+
+main h2 {
+  font-size: 52px;
 }
 
 .header-wrapper {
@@ -12,6 +20,7 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 8px;
+  padding: 0 62px;
 }
 
 .nav-list {
@@ -31,6 +40,8 @@ header {
 
 .nav-list li a {
   text-decoration: none;
+  color: black;
+  font-weight: 600;
 }
 
 .block1-wrapper {
@@ -41,28 +52,51 @@ header {
   background: linear-gradient(178deg, #ffffff, #e3e3e3);
 }
 
-.block1-wrapper img {
+.image-wrapper {
+  width: 50%;
+}
+
+.image-wrapper img {
   height: 602px;
   width: 100%;
 }
 
-.block1-wrapper div {
+.text-container {
   width: 50%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
+  padding-left: 62px;
 }
 
-.block1-wrapper button {
-  padding: 12px;
+.text-container button {
+  padding: 16px;
   background-color: #f6c402;
   border-radius: 32px;
   border: none;
+  font-size: 16px;
 }
 
-.block1-wrapper h4 {
+.text-container h4 {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-size: 22px;
+  margin: 22px 0;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+h2,
+h3 {
+  font-family: "Cactus Classical Serif", serif;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -70,7 +104,8 @@ h1 {
   font-family: "Cactus Classical Serif", serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 52px;
+  font-size: 62px;
+  margin: 0;
 }
 
 .block2-wrapper {
@@ -97,11 +132,18 @@ h1 {
   box-sizing: border-box;
 }
 
+.block3-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 72px;
+}
+
 .block3-container-services {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
+  gap: 15px;
   margin-top: 20px;
 }
 
@@ -109,7 +151,6 @@ h1 {
   position: relative;
   flex: 1 1 calc(33% - 20px);
   min-width: 280px;
-  margin-bottom: 20px;
   overflow: hidden;
 }
 
@@ -125,8 +166,7 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  background: rgba(0, 0, 0, 0.5);
+  background: #f6c402;
   padding: 10px 20px;
   border-radius: 5px;
   text-align: center;
@@ -139,4 +179,122 @@ h1 {
 
 .block3-container-item:hover img {
   transform: scale(1.1);
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #e3e3e3;
+  margin: 20px -62px -62px -62px;
+  padding: 20px 62px;
+}
+
+.footer-block1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-block2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-block2 h5 {
+  font-weight: 400;
+  width: 300px;
+}
+
+.block4-wrapper {
+  margin-top: 124px;
+}
+
+.block4-wrapper h2 {
+  margin: 72px 0;
+  text-align: center;
+}
+
+.block4-container-jobs {
+  display: flex;
+  gap: 62px;
+  flex-direction: column;
+}
+
+.block4-container-jobs img {
+  width: 62%;
+  object-fit: cover;
+  border-radius: 64px;
+}
+
+.block4-container-jobs h3 {
+  font-size: 32px;
+}
+
+.block4-container-jobs h4 {
+  font-size: 20px;
+}
+
+.block4-item1 {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 22px;
+  align-items: center;
+}
+
+.block4-item2 {
+  display: flex;
+  text-align: end;
+  gap: 22px;
+  align-items: center;
+}
+
+.block5-wrapper {
+  margin-top: 124px;
+}
+
+.block5-wrapper h2 {
+  text-align: center;
+  margin: 72px 0;
+}
+
+.block5-item-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 22px;
+}
+
+.block5-item-container img {
+  width: 62%;
+  object-fit: cover;
+  border-radius: 64px;
+}
+
+.block5-item-container h3 {
+  text-align: end;
+  font-size: 22px;
+}
+
+.block6-wrapper {
+  margin: 124px 0;
+}
+
+.block6-item-container {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.block6-item-container h3 {
+  font-size: 72px;
+  color: #f6c402;
+  font-weight: 900;
+}
+
+.block6-item-container h4 {
+  font-size: 26px;
+}
+
+.block6-wrapper h2 {
+  text-align: center;
 }
