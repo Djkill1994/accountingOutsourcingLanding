@@ -16,6 +16,7 @@
     <link rel="icon" type="image/svg+xml" href="/icons/logo.svg" />
     <link rel="canonical" href="Добавить домен!" />
     <link rel="stylesheet" href="/styles.css" />
+    <script src="main.js"></script>
     <meta
       name="keywords"
       content="бухгалтерские услуги, бухгалтерия, налоговая подготовка, финансовый консалтинг, бухгалтерский аутсорсинг, малый бизнес, средний бизнес"
@@ -34,7 +35,7 @@
         <img src="/icons/logo.svg" alt="Логотип компании" />
         <nav class="nav-list">
           <ul>
-            <li><a href="/services">Услуги</a></li>
+            <li><a href="#services">Услуги</a></li>
             <li><a href="/contacts">Контакты</a></li>
           </ul>
         </nav>
@@ -42,7 +43,8 @@
       </div>
     </header>
     <main>
-      <div class="block1-wrapper">
+      <!-- Блок 1: Бухгалтерские услуги -->
+      <section class="block1-wrapper">
         <div class="text-container">
           <h1>Бухгалтерские услуги</h1>
           <h4>
@@ -54,8 +56,10 @@
         <div class="image-wrapper">
           <img src="/public/books.png" alt="Бухгалтерские услуги" />
         </div>
-      </div>
-      <div class="block2-wrapper">
+      </section>
+
+      <!-- Блок 2: Преимущества -->
+      <section class="block2-wrapper">
         <h2>Преимущества</h2>
         <div class="block2-advantages">
           <div>
@@ -75,64 +79,86 @@
             <h5>Полное ведение бухгалтерской отчетности</h5>
           </div>
         </div>
-      </div>
-      <div class="block3-wrapper">
+      </section>
+
+      <!-- Блок 3: Услуги -->
+      <section id="services" class="block3-wrapper">
         <h2>Услуги</h2>
         <div class="block3-container-services">
-          <div class="block3-container-item">
+          <article
+            class="block3-container-item"
+            data-description="• постановка бухгалтерского учета;<br>• разработка Учетной политики юрлица;<br>• разработка оптимального документооборота с постановкой учета;<br>• внедрение 1С."
+          >
             <img src="/block3-item1.jpeg" alt="ПОСТАНОВКА УЧЕТА" />
-            <div>
+            <div class="service-description">
               <h3>ПОСТАНОВКА УЧЕТА</h3>
             </div>
-          </div>
-          <div class="block3-container-item">
+          </article>
+          <article
+            class="block3-container-item"
+            data-description="• бух.услуги и услуги по бухучету для физических и юридических лиц;<br>• консультации по налогам онлайн;"
+          >
             <img src="/block3-item2.jpg" alt="КОНСУЛЬТАЦИИ ПО НАЛОГАМ" />
-            <div>
+            <div class="service-description">
               <h3>КОНСУЛЬТАЦИИ ПО НАЛОГАМ</h3>
             </div>
-          </div>
-          <div class="block3-container-item">
+          </article>
+          <article
+            class="block3-container-item"
+            data-description="• помогаем в оформлении налоговых деклараций по любым налогам и сборам;<br>• отчеты в ФСЗН;<br>• Белгосстрах и органы статистики."
+          >
             <img
               src="/block3-item3.jpg"
               alt="СОСТАВЛЕНИЕ НАЛОГОВЫХ ДЕКЛАРАЦИЙ (Бухгалтерский аутсорсинг)"
             />
-            <div>
+            <div class="service-description">
               <h3>
                 СОСТАВЛЕНИЕ НАЛОГОВЫХ ДЕКЛАРАЦИЙ (Бухгалтерский аутсорсинг)
               </h3>
             </div>
-          </div>
-          <div class="block3-container-item">
+          </article>
+          <article
+            class="block3-container-item"
+            data-description="• помогаем с выбором системы налогообложения;<br>• производим расчет налогов на конкретных цифрах для бизнеса по системам налогообложения."
+          >
             <img
               src="/block3-item4.jpg"
               alt="ОПТИМИЗАЦИЯ НАЛОГООБЛОЖЕНИЯ (Бухгалтерское обслуживание)"
             />
-            <div>
+            <div class="service-description">
               <h3>ОПТИМИЗАЦИЯ НАЛОГООБЛОЖЕНИЯ (Бухгалтерское обслуживание)</h3>
             </div>
-          </div>
-          <div class="block3-container-item">
+          </article>
+          <article
+            class="block3-container-item"
+            data-description="• проводим бухгалтерское обслуживание IT-компаний;"
+          >
             <img src="/block3-item5.jpg" alt="БУХГАЛТЕРИЯ ДЛЯ IT" />
-            <div>
+            <div class="service-description">
               <h3>БУХГАЛТЕРИЯ ДЛЯ IT</h3>
             </div>
-          </div>
-          <div class="block3-container-item">
+          </article>
+          <article
+            class="block3-container-item"
+            data-description="• оказываем бух.услуги в различных отраслях и сферах деятельности индивидуальных предпринимателей и предприятий;"
+          >
             <img src="/block3-item6.jpg" alt="ВЕДЕНИЕ БУХГАЛТЕРСКОГО УЧЁТА" />
-            <div>
+            <div class="service-description">
               <h3>ВЕДЕНИЕ БУХГАЛТЕРСКОГО УЧЁТА</h3>
             </div>
-          </div>
+          </article>
           <h3>
             *Перечень оказываемых услуг периодически расширяется, основываясь на
             спрос клиентов.
           </h3>
         </div>
-      </div>
-      <div class="block4-wrapper">
+      </section>
+
+      <!-- Блок 4: Как мы работаем -->
+      <section class="block4-wrapper">
         <h2>Как мы работаем</h2>
         <div class="block4-container-jobs">
-          <div class="block4-item1">
+          <article class="block4-item1">
             <img src="/public/block4-item1.jpg" alt="ЗАКРЕПЛЕНИЕ БУХГАЛТЕРА" />
             <div>
               <h3>ЗАКРЕПЛЕНИЕ БУХГАЛТЕРА</h3>
@@ -141,18 +167,18 @@
                 закрепляется индивидуальный бухгалтер.
               </h4>
             </div>
-          </div>
-          <div class="block4-item2">
+          </article>
+          <article class="block4-item2">
             <img src="/public/block4-item2.jpg" alt="ВСЕСТОРОННЯЯ ПОМОЩЬ" />
             <div>
               <h3>ВСЕСТОРОННЯЯ ПОМОЩЬ</h3>
               <h4>
-                Теперь бухгалтерия, налоги и кадры будет под контролем наших
+                Теперь бухгалтерия, налоги и кадры будут под контролем наших
                 бухгалтеров, закрепленных за вами и вашим предприятием!
               </h4>
             </div>
-          </div>
-          <div class="block4-item1">
+          </article>
+          <article class="block4-item1">
             <img
               src="/public/block4-item3.jpg"
               alt="ВЫ КОНТРОЛИРУЕТЕ ОСНОВНЫЕ ПРОЦЕССЫ"
@@ -164,10 +190,12 @@
                 любым удобным для вас способом!
               </h4>
             </div>
-          </div>
+          </article>
         </div>
-      </div>
-      <div class="block5-wrapper">
+      </section>
+
+      <!-- Блок 5: Стоимость услуг -->
+      <section class="block5-wrapper">
         <h2>Стоимость услуг</h2>
         <div class="block5-item-container">
           <img src="/public/block5-item.jpg" alt="Стоимость услуг" />
@@ -177,8 +205,10 @@
             сотрудников, количества документов, наличия ВЭД.
           </h3>
         </div>
-      </div>
-      <div class="block6-wrapper">
+      </section>
+
+      <!-- Блок 6: Почему выбирают нас -->
+      <section class="block6-wrapper">
         <h2>Почему выбирают нас</h2>
         <div class="block6-item-container">
           <div>
@@ -198,18 +228,12 @@
             <h4>Опыт работы</h4>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <footer>
       <div class="footer-wrapper">
         <div class="footer-block1">
           <img src="/icons/logo.svg" alt="Логотип компании" />
-          <nav class="nav-list">
-            <ul>
-              <li><a href="/services">Услуги</a></li>
-              <li><a href="/contacts">Контакты</a></li>
-            </ul>
-          </nav>
           <h4>Телефон: +375-29-348-23-59</h4>
         </div>
         <div class="footer-block2">
@@ -223,6 +247,5 @@
         </div>
       </div>
     </footer>
-    <script src="/main.js"></script>
   </body>
 </html>
