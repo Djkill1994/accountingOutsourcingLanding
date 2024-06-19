@@ -36,10 +36,16 @@
         <nav class="nav-list">
           <ul>
             <li><a href="#services">Услуги</a></li>
-            <li><a href="/contacts">Контакты</a></li>
+            <li><a href="#cost-of-services">Стоимость услуг</a></li>
+            <li><a href="#contacts">Контакты</a></li>
           </ul>
         </nav>
-        <a href="tel:+375-29-348-23-59">Телефон: +375-29-348-23-59</a>
+        <a href="tel:+375-29-348-23-59"
+          ><img
+            src="/public/icons/phone-50.png"
+            alt="Телефон"
+          />+375-29-348-23-59</a
+        >
       </div>
     </header>
     <main>
@@ -87,7 +93,7 @@
         <div class="block3-container-services">
           <article
             class="block3-container-item"
-            data-description="• постановка бухгалтерского учета;<br>• разработка Учетной политики юрлица;<br>• разработка оптимального документооборота с постановкой учета;<br>• внедрение 1С."
+            data-description="• Постановка бухгалтерского учета;<br>• Разработка учетной политики юрлица;<br>• Разработка оптимального документооборота с постановкой учета;<br>• Внедрение 1С."
           >
             <img src="/block3-item1.jpeg" alt="ПОСТАНОВКА УЧЕТА" />
             <div class="service-description">
@@ -96,7 +102,7 @@
           </article>
           <article
             class="block3-container-item"
-            data-description="• бух.услуги и услуги по бухучету для физических и юридических лиц;<br>• консультации по налогам онлайн;"
+            data-description="• Бух.услуги и услуги по бухучету для физических и юридических лиц;<br>• Консультации по налогам онлайн;"
           >
             <img src="/block3-item2.jpg" alt="КОНСУЛЬТАЦИИ ПО НАЛОГАМ" />
             <div class="service-description">
@@ -105,7 +111,7 @@
           </article>
           <article
             class="block3-container-item"
-            data-description="• помогаем в оформлении налоговых деклараций по любым налогам и сборам;<br>• отчеты в ФСЗН;<br>• Белгосстрах и органы статистики."
+            data-description="• Помогаем в оформлении налоговых деклараций по любым налогам и сборам;<br>• Отчеты в ФСЗН;<br>• Белгосстрах и органы статистики."
           >
             <img
               src="/block3-item3.jpg"
@@ -119,7 +125,7 @@
           </article>
           <article
             class="block3-container-item"
-            data-description="• помогаем с выбором системы налогообложения;<br>• производим расчет налогов на конкретных цифрах для бизнеса по системам налогообложения."
+            data-description="• Помогаем с выбором системы налогообложения;<br>• Производим расчет налогов на конкретных цифрах для бизнеса по системам налогообложения."
           >
             <img
               src="/block3-item4.jpg"
@@ -131,7 +137,7 @@
           </article>
           <article
             class="block3-container-item"
-            data-description="• проводим бухгалтерское обслуживание IT-компаний;"
+            data-description="Проводим бухгалтерское обслуживание IT-компаний;"
           >
             <img src="/block3-item5.jpg" alt="БУХГАЛТЕРИЯ ДЛЯ IT" />
             <div class="service-description">
@@ -140,7 +146,7 @@
           </article>
           <article
             class="block3-container-item"
-            data-description="• оказываем бух.услуги в различных отраслях и сферах деятельности индивидуальных предпринимателей и предприятий;"
+            data-description="Оказываем бух.услуги в различных отраслях и сферах деятельности индивидуальных предпринимателей и предприятий;"
           >
             <img src="/block3-item6.jpg" alt="ВЕДЕНИЕ БУХГАЛТЕРСКОГО УЧЁТА" />
             <div class="service-description">
@@ -195,7 +201,7 @@
       </section>
 
       <!-- Блок 5: Стоимость услуг -->
-      <section class="block5-wrapper">
+      <section id="cost-of-services" class="block5-wrapper">
         <h2>Стоимость услуг</h2>
         <div class="block5-item-container">
           <img src="/public/block5-item.jpg" alt="Стоимость услуг" />
@@ -229,22 +235,39 @@
           </div>
         </div>
       </section>
+
+      <!-- Блок 7: Контакты -->
+      <section id="contacts" class="block7-wrapper">
+        <h2>Контакты</h2>
+        <div>
+          <a href="mailto:Lada77701@mail.ru"
+            ><img src="/public/icons/mail-50.png" alt="Почта" />Почта</a
+          >
+          <a href="https://t.me/+375293482359"
+            ><img
+              src="/public/icons/telegram-50%20.png"
+              alt="Telegram"
+            />Telegram</a
+          >
+          <a href="viber://chat?number=%2B375293482359"
+            ><img src="/public/icons/viber-50.png" alt="Viber" />Viber</a
+          >
+          <a href="tel:+375-29-348-23-59"
+            ><img src="/public/icons/phone-50.png" alt="Телефон" />Телефон</a
+          >
+        </div>
+        <div></div>
+      </section>
     </main>
     <footer>
-      <div class="footer-wrapper">
-        <div class="footer-block1">
-          <img src="/icons/logo.svg" alt="Логотип компании" />
-          <h4>Телефон: +375-29-348-23-59</h4>
-        </div>
-        <div class="footer-block2">
-          <div>
-            <h5>
-              НАШИ КОНТАКТЫ : ООО "Галерея Бизнеса", УНП 693207124. Тел.
-              +375-29-348-23-59. Lada77701@mail.ru
-            </h5>
-          </div>
-          <div>contacts</div>
-        </div>
+      <img src="/icons/logo.svg" alt="Логотип компании" />
+      <div class="footer-block">
+        <h5>
+          ООО "Галерея Бизнеса", УНП 693207124.
+          <a href="tel:+375-29-348-23-59"> Тел. +375-29-348-23-59.</a>
+          <a href="mailto:Lada77701@mail.ru">Lada77701@mail.ru</a>
+        </h5>
+        <p>&copy; 2024 ООО "Галерея Бизнеса". Все права защищены.</p>
       </div>
     </footer>
   </body>

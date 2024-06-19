@@ -2,6 +2,7 @@ body {
   padding: 0 62px;
   margin: 0;
 }
+
 header {
   position: fixed;
   width: 100%;
@@ -23,6 +24,16 @@ main h2 {
   padding: 0 62px;
 }
 
+.header-wrapper a img {
+  width: 25px;
+}
+
+.header-wrapper a {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
 .nav-list {
   list-style: none;
   padding: 0;
@@ -38,7 +49,7 @@ main h2 {
   margin-right: 0;
 }
 
-.nav-list li a {
+a {
   text-decoration: none;
   color: black;
   font-weight: 600;
@@ -181,7 +192,7 @@ h1 {
   transform: scale(1.1);
 }
 
-.footer-wrapper {
+footer {
   display: flex;
   flex-direction: column;
   background-color: #e3e3e3;
@@ -189,19 +200,20 @@ h1 {
   padding: 20px 62px;
 }
 
-.footer-block1 {
-  display: flex;
-  justify-content: space-between;
+footer img {
+  width: 50px;
 }
 
-.footer-block2 {
+.footer-block {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.footer-block2 h5 {
-  font-weight: 400;
+.footer-block h5 {
   width: 300px;
+  font-size: 16px;
+  margin: 0;
 }
 
 .block4-wrapper {
@@ -297,4 +309,54 @@ h1 {
 
 .block6-wrapper h2 {
   text-align: center;
+}
+
+.block7-wrapper {
+  margin: 124px 0;
+}
+
+.block7-wrapper h2 {
+  text-align: center;
+}
+
+.block7-wrapper a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 22px;
+}
+
+.block7-wrapper div {
+  display: flex;
+  justify-content: center;
+  gap: 62px;
+}
+
+@media (max-width: 840px) {
+  .image-wrapper {
+    display: none;
+  }
+
+  .block4-item1 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .block4-item2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .block5-item-container {
+    flex-direction: column;
+  }
+
+  .block5-item-container h3 {
+    text-align: center;
+  }
+
+  .block6-item-container {
+    flex-direction: column;
+  }
 }
