@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Функция для определения типа устройства
   function isMobileDevice() {
     return /Mobi|Android|iPhone|iPad|iPod|Windows Phone/i.test(
-      navigator.userAgent,
+      navigator.userAgent
     );
   }
 
