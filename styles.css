@@ -352,6 +352,9 @@ footer img {
     ul {
       padding: 0;
     }
+    a {
+      font-size: 12px;
+    }
   }
 
   .image-wrapper {
