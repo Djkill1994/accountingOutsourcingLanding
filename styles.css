@@ -4,12 +4,24 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
   position: fixed;
   width: 100%;
   z-index: 1000;
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   margin: 0 -62px;
+}
+
+header a {
+  display: flex;
+  padding-right: 62px;
+  align-items: center;
+}
+
+header li a {
+  padding: 0;
 }
 
 main h2 {
@@ -20,11 +32,10 @@ main h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 8px;
   padding: 0 62px;
 }
 
-.header-wrapper a img {
+header a img {
   width: 25px;
 }
 
@@ -32,12 +43,6 @@ main h2 {
   display: flex;
   gap: 12px;
   align-items: center;
-}
-
-.nav-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .nav-list li {
@@ -53,6 +58,7 @@ a {
   text-decoration: none;
   color: black;
   font-weight: 600;
+  font-family: "Roboto", sans-serif;
 }
 
 .block1-wrapper {
@@ -342,19 +348,28 @@ footer img {
   gap: 62px;
 }
 
+.block7-wrapper img {
+  width: 50px;
+}
+
 @media (max-width: 840px) {
   .header-wrapper {
-    padding: 12px;
+    padding-left: 12px;
     margin: 0;
-    h4 {
-      display: none;
-    }
     ul {
       padding: 0;
     }
     a {
       font-size: 12px;
     }
+  }
+
+  header a {
+    padding-right: 12px;
+  }
+
+  header h4 {
+    display: none;
   }
 
   .image-wrapper {
