@@ -14,16 +14,17 @@ document.addEventListener("DOMContentLoaded", function () {
       description.innerHTML = newData;
     }
 
-    // Восстанавливаем оригинальный текст при уходе курсора
-    item.addEventListener("mouseout", function restoreOriginalText() {
+    // Функция для восстановления оригинального текста при уходе курсора
+    function restoreOriginalText() {
       description.innerHTML = originalText;
-      item.removeEventListener("mouseout", restoreOriginalText);
-    });
+    }
+
+    item.addEventListener("mouseleave", restoreOriginalText, { once: true });
   }
 
   // Навешиваем обработчики событий для каждой услуги
   serviceDescriptions.forEach((item) => {
-    item.addEventListener("mouseover", changeDescription);
+    item.addEventListener("mouseenter", changeDescription);
   });
 
   // Обработчик для плавного скроллинга при клике на ссылки в навигации
@@ -35,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
       const targetSection = document.querySelector(targetId);
 
       if (targetSection) {
-        // Выполняем плавный скроллинг к целевому блоку
         window.scrollTo({
           top: targetSection.offsetTop,
           behavior: "smooth",
@@ -56,10 +56,8 @@ document.addEventListener("DOMContentLoaded", function () {
     .getElementById("consultationButton")
     .addEventListener("click", function () {
       if (isMobileDevice()) {
-        // При мобильном использовании вызываем номер телефона
         window.location.href = "tel:+375-29-348-23-59";
       } else {
-        // При десктопном использовании переходим на Telegram
         window.location.href = "https://t.me/+375293482359";
       }
     });
