@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const serviceDescriptions = document.querySelectorAll(
-    ".block3-container-item",
+    ".block3-container-item"
   );
 
   // Функция для изменения описания услуги при наведении
