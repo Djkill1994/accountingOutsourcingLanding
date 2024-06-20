@@ -43,4 +43,24 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   });
+
+  // Функция для определения типа устройства
+  function isMobileDevice() {
+    return /Mobi|Android|iPhone|iPad|iPod|Windows Phone/i.test(
+      navigator.userAgent,
+    );
+  }
+
+  // Присваиваем действие кнопке
+  document
+    .getElementById("consultationButton")
+    .addEventListener("click", function () {
+      if (isMobileDevice()) {
+        // При мобильном использовании вызываем номер телефона
+        window.location.href = "tel:+375-29-348-23-59";
+      } else {
+        // При десктопном использовании переходим на Telegram
+        window.location.href = "https://t.me/+375293482359";
+      }
+    });
 });

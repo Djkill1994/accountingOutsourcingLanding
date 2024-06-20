@@ -80,12 +80,21 @@ a {
   padding-left: 62px;
 }
 
-.text-container button {
+button {
   padding: 16px;
   background-color: #f6c402;
   border-radius: 32px;
   border: none;
   font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(0.9);
 }
 
 .text-container h4 {
@@ -334,8 +343,37 @@ footer img {
 }
 
 @media (max-width: 840px) {
+  .header-wrapper {
+    padding: 12px;
+    margin: 0;
+    h4 {
+      display: none;
+    }
+    ul {
+      padding: 0;
+    }
+  }
+
   .image-wrapper {
     display: none;
+  }
+
+  h1 {
+    font-size: 46px;
+  }
+
+  main h2 {
+    font-size: 40px;
+  }
+
+  .text-container {
+    width: 100%;
+    margin: 136px 0;
+    padding: 0 12px;
+  }
+
+  .block2-advantages {
+    flex-direction: column;
   }
 
   .block4-item1 {
@@ -358,5 +396,13 @@ footer img {
 
   .block6-item-container {
     flex-direction: column;
+  }
+
+  .block7-wrapper div {
+    flex-direction: column;
+  }
+
+  footer {
+    padding: 12px 16px;
   }
 }
