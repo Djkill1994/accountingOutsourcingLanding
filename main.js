@@ -1,7 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
   const serviceDescriptions = document.querySelectorAll(
-    ".block3-container-item"
+    ".block3-container-item",
   );
+  const consultationButton = document.getElementById("consultationButton");
+
+  if (consultationButton) {
+    // Присваиваем действие кнопке
+    consultationButton.addEventListener("click", function () {
+      if (isMobileDevice()) {
+        window.location.href = "tel:+375-29-348-23-59";
+      } else {
+        window.location.href = "https://t.me/+375293482359";
+      }
+    });
+  }
 
   // Функция для изменения описания услуги при наведении
   function changeDescription(event) {
@@ -28,8 +40,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Обработчик для плавного скроллинга при клике на ссылки в навигации
-  document.querySelector("nav ul").addEventListener("click", function (event) {
-    if (event.target.tagName === "A") {
+  const navLinks = document.querySelectorAll("nav ul a");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
       event.preventDefault();
 
       const targetId = event.target.getAttribute("href");
@@ -41,24 +54,13 @@ document.addEventListener("DOMContentLoaded", function () {
           behavior: "smooth",
         });
       }
-    }
+    });
   });
 
   // Функция для определения типа устройства
   function isMobileDevice() {
     return /Mobi|Android|iPhone|iPad|iPod|Windows Phone/i.test(
-      navigator.userAgent
+      navigator.userAgent,
     );
   }
-
-  // Присваиваем действие кнопке
-  document
-    .getElementById("consultationButton")
-    .addEventListener("click", function () {
-      if (isMobileDevice()) {
-        window.location.href = "tel:+375-29-348-23-59";
-      } else {
-        window.location.href = "https://t.me/+375293482359";
-      }
-    });
 });

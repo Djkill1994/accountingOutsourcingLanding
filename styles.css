@@ -463,4 +463,8 @@ footer img {
   .block7-wrapper {
     margin: 54px 0;
   }
+
+  .block3-container-item div {
+    width: 80%;
+  }
 }
